@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by ahmed on 3/16/17.
  */
 @Controller
+@RequestMapping("hello")
 public class HelloController {
 
     @RequestMapping(value = "")
