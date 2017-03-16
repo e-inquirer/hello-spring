@@ -32,7 +32,7 @@ public class HelloController {
     public String helloForm() {
         String html = "<form method='post'>" +
                 "<input type='text' name='name' />" +
-                "<input type='submit' value='Greet Me!'>" +
+                "<input type='submit' value='Greet Me!' />" +
                 "</form>";
 
         return html;
