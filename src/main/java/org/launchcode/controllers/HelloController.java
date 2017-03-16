@@ -41,7 +41,6 @@ public class HelloController {
     @RequestMapping(value = "hello", method = RequestMethod.POST)
     @ResponseBody
     public String helloPost(HttpServletRequest request) {
-
         String name = request.getParameter("name");
 
         return "Hello " + name;
