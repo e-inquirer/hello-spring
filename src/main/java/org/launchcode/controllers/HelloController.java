@@ -29,6 +29,13 @@ public class HelloController {
     public String helloForm() {
         String html = "<form method='post'>" +
                 "<input type='text' name='name' />" +
+                "<select name='language'>" +
+                "<option value='English'>English</option>" +
+                "<option value='French'>French</option>" +
+                "<option value='German'>German</option>" +
+                "<option value='Latin'>Latin</option>" +
+                "<option value='Spanish'>Spanish</option>" +
+                "</select>" +
                 "<input type='submit' value='Greet Me!' />" +
                 "</form>";
 
@@ -51,8 +58,7 @@ public class HelloController {
     }
 
     @RequestMapping(value = "goodbye")
-    @ResponseBody
     public String goodbye() {
-        return "Goodbye";
+        return "redirect:/";
     }
 }
